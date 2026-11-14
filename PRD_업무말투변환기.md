@@ -89,7 +89,7 @@ AI도 사람도 "끝"의 기준이 명확해야 헤매지 않습니다. 기준 �
 - [ ] Upstage Solar-Pro4 API 호출이 정상 작동한다
 - [ ] 수신 대상(4종)에 따라 다른 프롬프트가 적용된다
 - [ ] CORS 설정이 되어 있어 프론트엔드에서 호출 가능하다
-- [ ] `.env` 파일로 API 키를 관리하고, `.gitignore`에 등록되어 있다
+- [x] `.env` 파일로 API 키를 관리하고, `.gitignore`에 등록되어 있다
 - [ ] FastAPI 서버에 Staic Page(`index.html`) 라우팅 기능이 있어야 한다
 - [ ] Swagger UI(/docs)를 통해 API 문서를 브라우저에서 확인할 수 있다
 
@@ -290,14 +290,14 @@ FastAPI는 Swagger UI를 기본 제공하므로 서버가 기동 중인 상태�
 
 ## 8. 단계별 구현 순서
 
-### [ ] STEP 1. 환경 준비
+### [x] STEP 1. 환경 준비
 
-1. GitHub 레포지토리 생성 (`biztalk_antigravity`)
-2. 디렉토리 구조 생성
-3. `.gitignore` 작성 — `.env` 반드시 포함
-4. Upstage API 키 발급 및 `.env` 파일 작성
-5. `backend/requirements.txt` 작성하고 의존성(package)의 최신 버전(use context7)을 명시해야 함
-6. 가상환경(`.venv`) 폴더를 생성하고 `backend/requirements.txt` 명시된 의존성(package)을 가상환경 폴더에 설치해야 함
+1. [x] GitHub 레포지토리 생성 (`biztalk_antigravity`)
+2. [x] 디렉토리 구조 생성
+3. [x] `.gitignore` 작성 — `.env` 반드시 포함
+4. [x] Upstage API 키 발급 및 `.env` 파일 작성
+5. [x] `backend/requirements.txt` 작성하고 의존성(package)의 최신 버전(use context7)을 명시해야 함
+6. [x] 가상환경(`.venv`) 폴더를 생성하고 `backend/requirements.txt` 명시된 의존성(package)을 가상환경 폴더에 설치해야 함
 
 ---
 
@@ -476,12 +476,12 @@ node_modules/
 ### requirements.txt
 
 ```
-fastapi
-uvicorn
-langchain
-langchain-upstage
-python-dotenv
-pydantic
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+langchain>=1.5.0
+langchain-upstage>=0.7.7
+python-dotenv>=1.0.1
+pydantic>=2.8.0
 ```
 
 ### 로컬 실행 명령어

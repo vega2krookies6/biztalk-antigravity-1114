@@ -1,1 +1,18 @@
+# 환경 변수 (API 키 보호)
 .env
+.env.*
+
+# Python 가상환경 및 캐시
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 배포 및 빌드 아티팩트
+node_modules/
+.DS_Store
+Thumbs.db
+dist/
+build/
