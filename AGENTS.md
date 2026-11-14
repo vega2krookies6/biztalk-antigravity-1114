@@ -126,10 +126,10 @@ Antigravity는 본 프로젝트를 수행할 때 아래 원칙을 **절대적 �
 - [x] **STEP 1. 환경 준비**
   - 가상환경(`.venv`) 구성 및 `backend/requirements.txt` 의존성 설치
   - `.gitignore` 검증 (`.env` 제외 확인)
-- [ ] **STEP 2. 백엔드 구현**
+- [x] **STEP 2. 백엔드 구현**
   - `schemas.py` → `templates.py` → `tone_converter.py` → `convert.py` → `main.py` 순서로 구현
   - 로컬 서버 기동(`uvicorn main:app --reload`) 및 Swagger UI(`/docs`), `/health` 검증
-- [ ] **STEP 3. 프론트엔드 구현**
+- [x] **STEP 3. 프론트엔드 구현**
   - `index.html` → `style.css` → `app.js` 순서로 구현
   - 대상 선택, 텍스트 변환, 로딩 표시, 복사 기능 브라우저 동작 검증
 - [ ] **STEP 4. 배포 및 최종 검증**
